@@ -28,6 +28,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
+import {Timer} from './components/Timer';
 
 const Section: React.FC<{
   title: string;
@@ -72,6 +73,7 @@ const App = () => {
           contentInsetAdjustmentBehavior="automatic"
           style={backgroundStyle}>
           <Header />
+          <Timer />
           <View
             style={{
               backgroundColor: isDarkMode ? Colors.black : Colors.white,
